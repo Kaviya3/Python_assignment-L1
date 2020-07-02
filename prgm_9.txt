@@ -1,0 +1,18 @@
+#PROGRAM 9
+
+inputfile = "C:\Users\KA20085024\Desktop\Filedata.txt"
+import linecache,tempfile
+with open(inputfile,'r') as f:
+  count = 0
+  for line in f:
+   k=line.find("    0")
+   count = count+1
+   if k!= -1:
+    print(k)
+    req_line = linecache.getline(inputfile,count)
+    print(req_line)
+    temp=tempfile.TemporaryFile(mode='w+t')
+    temp.writelines(req_line)
+    print(temp.seek(k+8))
+    print("File which is Zero byte in the given directory content is : ", temp.readline())
+    temp.close()

@@ -1,0 +1,10 @@
+#PROGRAM 3
+
+m = "e"
+x = input("enter the string:")
+l = len(x)
+count = 0
+for i in range(0,l):
+  if m in x[i]:
+   count += 1
+print(count == 2)

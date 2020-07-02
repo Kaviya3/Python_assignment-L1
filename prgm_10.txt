@@ -1,0 +1,5 @@
+#PROGRAM 10
+
+new_menu = ['chennai', 'apple', 'Mushroom', 'banana', 'pineapple', 'italy', 'apple', 'chennai', 'Sausage', 'Sausage']
+final_new_menu = list(dict.fromkeys(new_menu))
+print(final_new_menu)

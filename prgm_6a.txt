@@ -1,0 +1,17 @@
+#PROGRAM 6a
+
+list1 = [11,67,45,87]
+list2 = [65,34,88,45,26]
+list3 = [26,58,35,78,12]
+list1.sort(reverse=True)
+list2.sort(reverse=True)
+list3.sort(reverse=True)
+
+Maxlist = []
+a = list1[0:2]
+b = list2[0:2]
+c = list3[0:2]
+Maxlist.extend(a)
+Maxlist.extend(b)
+Maxlist.extend(c)
+print("Maxlist={}".format(Maxlist))
